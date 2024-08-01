@@ -52,7 +52,7 @@ yarn dev
 ```
 # A intenção ao desenvolver a plataforma foi usar a melhores práticas:
 ![image](https://github.com/user-attachments/assets/ead7c12b-60f0-4a51-ae3c-e11a50b4a565)
-![image](https://github.com/user-attachments/assets/edf589e8-3ad6-42e5-a77c-485b7cd2ece6)
+![image](https://github.com/user-attachments/assets/da9d05cc-3e9e-4b20-8955-911f7347cbee)
 ![image](https://github.com/user-attachments/assets/585259d4-4289-4331-93c9-8fa88f30764f)
 
 
