@@ -1,26 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typography, useTheme, Box, IconButton } from "@mui/material";
 import ListUnit from "./List";
 import { UnitProps } from "../../interfaces/units";
 import SwipeableViews from "react-swipeable-views";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
-import { units } from "../../service/units";
+interface UnitsDataProps {
+  data: UnitProps[];
+}
 
-const Units: React.FC = () => {
-  const [unitsInfo, setUnitsInfo] = useState<UnitProps[]>([]);
+const Units: React.FC<UnitsDataProps> = ({ data }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState<number>(0);
   const itemsPerSlide = 2;
-  const maxSteps = Math.ceil(unitsInfo.length / itemsPerSlide);
-
-  const fetchUnits = async () => {
-    try {
-      const res = await units.all();
-      setUnitsInfo(res);
-    } catch (error) {
-      console.error("Erro ao carregar as unidades.", error);
-    }
-  };
+  const maxSteps = Math.ceil(data.length / itemsPerSlide);
 
   const handleStepChange = (step: number) => {
     setActiveStep(step);
@@ -35,10 +27,6 @@ const Units: React.FC = () => {
       (prevActiveStep) => (prevActiveStep - 1 + maxSteps) % maxSteps
     );
   };
-
-  useEffect(() => {
-    fetchUnits();
-  }, []);
 
   return (
     <div id="units">
@@ -62,7 +50,7 @@ const Units: React.FC = () => {
                 padding: 2,
               }}
             >
-              {unitsInfo
+              {data
                 .slice(
                   stepIndex * itemsPerSlide,
                   (stepIndex + 1) * itemsPerSlide
