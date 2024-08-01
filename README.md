@@ -29,7 +29,7 @@ Link do repositório: https://github.com/anakarlasantana/CasaDaMulherDigital_api
 Primeiro, você precisa clonar o repositório do projeto para sua máquina local. Abra o terminal e execute:
 
 ```bash
-git clone <URL_DO_REPOSITÓRIO>
+git clone https://github.com/anakarlasantana/CasaDaMulherDigital_web.git
 ```
 Substitua <URL_DO_REPOSITÓRIO> pela URL do repositório que você deseja clonar.
 
@@ -38,7 +38,7 @@ Substitua <URL_DO_REPOSITÓRIO> pela URL do repositório que você deseja clonar
 Navegue até o diretório do projeto e instale todas as dependências necessárias usando o Yarn. No terminal, execute:
 
 ```bash
-cd <NOME_DA_PASTA_DO_PROJETO>
+cd /project
 yarn install
 ```
 Isso vai baixar todas as bibliotecas e pacotes que o projeto precisa para funcionar.
