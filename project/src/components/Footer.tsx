@@ -1,7 +1,11 @@
 import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { Grid, IconButton, Stack, Typography } from "@mui/material";
+import { useWebViewContext } from "../contexts/WebViewsContext";
 
 const Footer = () => {
+
+  const { isMobile } = useWebViewContext();
+
   return (
     <Grid
       container
@@ -57,7 +61,7 @@ const Footer = () => {
           </IconButton>
         </Stack>
         <Stack>
-          <Typography variant="body2" color="white">
+          <Typography fontSize={isMobile ? "10px" : "14px"} color="white">
             © 2024 Ana Karla Santana. Todos os direitos reservados.
           </Typography>
         </Stack>

@@ -13,8 +13,10 @@ import { units } from "../service/units";
 import ServicesProps from "../interfaces/services";
 import PolicyProps from "../interfaces/politices";
 import { UnitProps } from "../interfaces/units";
+import { useWebViewContext } from "../contexts/WebViewsContext";
 
 const Home: React.FC = () => {
+  const { isMobile } = useWebViewContext();
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPolitices, setFilteredPolitices] = useState<PolicyProps[]>([]);
   const [filteredServices, setFilteredServices] = useState<ServicesProps[]>([]);
@@ -47,8 +49,8 @@ const Home: React.FC = () => {
         container
         spacing={2}
         sx={{
-          marginTop: "5rem",
-          marginBottom: "5rem",
+          marginTop: isMobile ? "10rem" : "5rem",
+          marginBottom: isMobile ? "8rem" : "5rem",
         }}
       >
         <Grid item xs={12} sm={12} md={12}>

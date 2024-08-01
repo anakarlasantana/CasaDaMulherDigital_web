@@ -4,14 +4,16 @@ import ListUnit from "./List";
 import { UnitProps } from "../../interfaces/units";
 import SwipeableViews from "react-swipeable-views";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
+import { useWebViewContext } from "../../contexts/WebViewsContext";
 interface UnitsDataProps {
   data: UnitProps[];
 }
 
 const Units: React.FC<UnitsDataProps> = ({ data }) => {
   const theme = useTheme();
+  const { isMobile } = useWebViewContext();
   const [activeStep, setActiveStep] = React.useState<number>(0);
-  const itemsPerSlide = 2;
+  const itemsPerSlide = isMobile ? 1 : 2;
   const maxSteps = Math.ceil(data.length / itemsPerSlide);
 
   const handleStepChange = (step: number) => {

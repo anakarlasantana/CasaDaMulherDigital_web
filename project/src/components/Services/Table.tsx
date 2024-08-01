@@ -12,7 +12,7 @@ import ServicesProps from "../../interfaces/services";
 const Table: React.FC<ServicesProps> = ({ name, description, units }) => {
   return (
     <div>
-      <Accordion defaultExpanded>
+      <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMore />}
           aria-controls="panel1-content"
