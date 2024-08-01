@@ -4,17 +4,16 @@ O projeto consiste em um protótipo de plataforma digital para a Secretaria das 
 # Bibliotecas e Ferramentas do Projeto
 Aqui estão algumas das bibliotecas que o projeto utiliza:
 
-@emotion/react e @emotion/styled: Para estilização de componentes.
-@mui/material e @mui/icons-material: Usamos o Material UI para os componentes de interface e ícones.
-axios: Para fazer requisições HTTP.
-react e react-dom: O coração do nosso aplicativo é o React.
-react-hook-form: Para gerenciar formulários de maneira prática.
-react-query: Para lidar com o estado das requisições e cache.
-react-router-dom: Para a navegação entre páginas.
-E, claro, algumas ferramentas de desenvolvimento:
-
-TypeScript: Para ter um código mais seguro e com tipagem.
-eslint e @typescript-eslint/eslint-plugin: Para garantir que o código esteja limpo e siga boas práticas.
+- **@emotion/react** e **@emotion/styled**: Para estilização de componentes, permitindo uma abordagem modular e personalizada.
+- **@mui/material** e **@mui/icons-material**: Utilizados para os componentes de interface e ícones, proporcionando uma interface de usuário consistente e moderna com o Material UI.
+- **axios**: Para realizar requisições HTTP, facilitando a comunicação com APIs e serviços externos.
+- **react** e **react-dom**: O coração do nosso aplicativo, responsável pela construção e gerenciamento da interface de usuário.
+- **react-hook-form**: Para gerenciar formulários de maneira prática e eficiente, simplificando a coleta e validação de dados.
+- **react-query**: Para lidar com o estado das requisições e cache, melhorando a performance e a experiência do usuário.
+- **react-router-dom**: Para gerenciar a navegação entre páginas, permitindo uma navegação fluida e dinâmica no aplicativo.
+- **TypeScript**: Para garantir um código mais seguro e com tipagem, aumentando a confiabilidade e a manutenção do código.
+- **eslint** e **@typescript-eslint/eslint-plugin**: Para assegurar que o código esteja limpo e siga boas práticas, ajudando a evitar erros e melhorar a qualidade do código.
+  
 Certifique-se de ter essas ferramentas instaladas para garantir que o projeto funcione sem problemas. Se precisar de ajuda para instalar qualquer uma delas, não hesite em procurar! 😄
 
 # Como Rodar o Projeto Localmente
